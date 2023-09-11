@@ -6,17 +6,22 @@
 
 html {
   font-size: 16px;
-  height: 200rem;
+  height: auto;
   font-family: "Roboto", sans-serif;
 }
 
 .sidebar {
-  height: 85%;
+  height: 100vh;
   width: 20%;
-  /* border: 2px solid black; */
-  /* background-color: #a0d2eb; */
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
+  border: 2px solid black;
+  /* background-color: #a0d2eb; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1000;
 }
 
 .sidebar-container {
@@ -59,7 +64,7 @@ html {
 
 .nav-search {
   height: 2.5rem;
-  width: 30rem;
+  width: 30vw;
   border: 2px solid red;
   margin-left: 5%;
   display: flex;
@@ -96,19 +101,38 @@ html {
 .other-icons {
   /* border: 2px solid black; */
   height: 2.5rem;
-  width: 18%;
+  width: 15vw;
   margin-left: 10%;
 }
 
-.random i {
+.random {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .random i {
   padding-right: 19%;
+} */
+
+.contanier-wrapper {
+  display: flex;
+  margin-left: 20%;
+  border: 5px solid red;
+}
+
+h2,h3{
+  font-size: 1.3vw;
+}
+p {
+  line-height: 1vw;
+  font-size: .8vw;
 }
 
 .account-toggle {
   width: 25%;
   height: 50rem;
   /* border: 2px solid black; */
-  margin-left: 20%;
+  /* margin-left: 20%; */
 }
 
 .accountSettingBox {
@@ -119,10 +143,15 @@ html {
   overflow: hidden;
   cursor: pointer;
   /* border: none; */
-  border-radius: 5px;
-  background-color: transparent; /* Make background transparent */
+  /* display: flex;
+  flex-direction: column; */
+  border-radius: 10px; 
+  background-color: transparent;
   transition: background-color 0.3s;
+  box-shadow: .3rem .8rem 1.2rem rgba(0,0,0,0.35);
+  transform: scale(0.9);
 }
+
 
 button:hover {
   /* background-color: aquamarine; */
@@ -134,35 +163,72 @@ button:active {
 }
 
 .container {
-  max-height: 9rem;
-  /* margin-top: 1%; */
-  width: 53%;
-  margin-left: 45%;
+  max-height: 10vw;
+  margin-top: 2.4%;
+  margin-right: 2vw;
+  width: 72vw;
   border: 1px solid black;
-  /* position: relative;
-  top: ; */
   display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .photo-section {
   height: auto;
   width: auto;
-  margin: 2rem 0 0 5rem;
+  margin: 4% 0 0 7%;
 }
 
 .photo-section img {
-  height: 4rem;
-  width: 4rem;
+  height: 4vw;
+  width: 4vw;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .text-section {
-  margin: 2rem;
+  margin: 5% 0 2% 4%;
   width: 15rem;
 }
 
 .text-section p {
-  font-size: 0.9rem;
+  font-size: 1vw;
   font-style: italic;
 }
+
+.upload-section {
+  display: grid;
+  place-content: center;
+  margin: 3vw 2vw 2vw 4vw;
+}
+
+.upload-section input[type='file'] {
+  
+  display: none;
+}
+
+label {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: .2rem;
+  text-align: center;
+  padding: .4rem 1rem;
+  font-size: 1vw;
+  letter-spacing: 1.5px;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: .3rem .8rem 1.2rem rgba(0,0,0,0.35);
+}
+
+label:active {
+  transform: scale(0.9);
+}
+
+/* form {
+  height: auto;
+  width: 100%;
+}
+
+.form-section input {
+  border-radius: 5px solid blue;
+} */

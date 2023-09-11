@@ -27,7 +27,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="other-icons">
           <div class="random search-icon">
             <i class="fa-solid fa-bell"></i>
@@ -52,31 +52,41 @@
         </div>
       </a>
     </section>
-    <section class="account-toggle">
-      <div class="box1">
-        <button class="accountSettingBox">
-          <h2>Account Settings</h2>
-          <p>Details about your personal information</p>
-        </button>
-      </div>
-      <div class="box1">
-        <button class="accountSettingBox">
-          <h2>Notifications</h2>
-          <p>Details about your personal information</p>
-        </button>
-      </div>
-    </section>
-    <main>
-      <div class="container">
+    <section class="contanier-wrapper">
+      <section class="account-toggle">
+        <div class="box1">
+          <button class="accountSettingBox">
+            <h2>Account Settings</h2>
+            <p>Details about your personal information</p>
+          </button>
+        </div>
+        <div class="box1">
+          <button class="accountSettingBox">
+            <h2>Notifications</h2>
+            <p>Details about your personal information</p>
+          </button>
+        </div>
+      </section>
+      <section class="container">
         <div class="photo-section">
-          <!-- <input type="file" name="my-file" placeholder="Upload" /> -->
-          <img src="./resources/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="profile picture">
+          <img
+            src="./resources/ian-dooley-d1UPkiFd04A-unsplash.jpg"
+            alt="profile picture"
+          />
         </div>
         <div class="text-section">
           <h3>Upload a new photo</h3>
           <p>Profile-pic.jpg</p>
         </div>
-      </div>
-    </main>
+        <div class="upload-section">
+          <input type="file" id="uploadbtn"/>
+          <label for="uploadbtn">Upload</label>
+        </div>
+      </section>
+    </section>
+    <!-- <form class="form-section">
+      <label for="firstName" name="name">First Name</label>
+      <input type="text" id="name">
+    </form> -->
   </body>
 </html>
