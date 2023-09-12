@@ -27,7 +27,7 @@
             </div>
           </div>
         </div>
-      
+
         <div class="other-icons">
           <div class="random search-icon">
             <i class="fa-solid fa-bell"></i>
@@ -60,33 +60,79 @@
             <p>Details about your personal information</p>
           </button>
         </div>
-        <div class="box1">
+        <!-- <div class="box1">
           <button class="accountSettingBox">
             <h2>Notifications</h2>
             <p>Details about your personal information</p>
           </button>
-        </div>
+        </div> -->
       </section>
-      <section class="container">
-        <div class="photo-section">
-          <img
-            src="./resources/ian-dooley-d1UPkiFd04A-unsplash.jpg"
-            alt="profile picture"
-          />
-        </div>
-        <div class="text-section">
-          <h3>Upload a new photo</h3>
-          <p>Profile-pic.jpg</p>
-        </div>
-        <div class="upload-section">
-          <input type="file" id="uploadbtn"/>
-          <label for="uploadbtn">Upload</label>
-        </div>
-      </section>
+      <main>
+        <section class="container">
+          <div class="photo-section">
+            <img
+              src="./resources/ian-dooley-d1UPkiFd04A-unsplash.jpg"
+              alt="profile picture"
+            />
+          </div>
+          <div class="text-section">
+            <h3>Upload a new photo</h3>
+            <p>Profile-pic.jpg</p>
+          </div>
+          <div class="upload-section">
+            <input type="file" id="uploadbtn" />
+            <label for="uploadbtn">Upload</label>
+          </div>
+        </section>
+
+        <section class="form-container">
+          <section class="inner-form-container">
+            <h1>Change User Information here</h1>
+            <form class="form-section">
+                  <div>
+                      <label for="firstName" name="name">Full Name*</label><br />
+                      <input type="text" id="name" />
+                  </div>
+                  <div>
+                      <label for="email" name="emailAddress">Email Address*</label
+                      ><br />
+                      <input type="text" id="emailAddress" />
+                  </div>
+            </form>
+            <form class="address-form">
+                  <div class="address">
+                    <label for="address" name="Address">Address*</label><br />
+                    <input type="text" id="address" />
+                  </div>
+                </form>
+                <form class="form-section">
+                  <div>
+                    <label for="city" name="city">City*</label><br />
+                    <input type="text" id="city" />
+                </div>
+                <div>
+                    <label for="state" name="state">State/Province*</label
+                    ><br />
+                    <input type="text" id="state" />
+                </div>
+                </form>
+                <form class="form-section">
+                  <div>
+                    <label for="zipcode" name="zipcode">Zipcode*</label><br />
+                    <input type="text" id="zipcode" />
+                </div>
+                <div>
+                    <label for="country" name="country">Country*</label
+                    ><br />
+                    <input type="text" id="country" />
+                </div>
+                </form>
+                <form class="form-section">
+                <input type="submit" name="Submit" class="submit">
+            </form>
+          </section>
+        </section>
+      </main>
     </section>
-    <!-- <form class="form-section">
-      <label for="firstName" name="name">First Name</label>
-      <input type="text" id="name">
-    </form> -->
   </body>
 </html>
