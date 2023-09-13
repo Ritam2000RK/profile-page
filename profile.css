@@ -5,12 +5,14 @@
 }
 
 html {
+  background-color: aliceblue;
   font-size: 16px;
   height: auto;
   font-family: "Roboto", sans-serif;
 }
 
 .sidebar {
+  color: white;
   height: 100vh;
   width: 20%;
   position: fixed;
@@ -20,7 +22,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   z-index: 1000;
-  background-color: rgb(243, 229, 171);
+  background-color: rgba(49, 49, 206, 0.808);
 }
 
 .sidebar-container {
@@ -32,7 +34,8 @@ html {
 }
 
 .sidebar-container:hover {
-  background-color: antiquewhite;
+  background-color: rgba(73, 73, 216, 0.808);
+  scale: 0.95;
 }
 
 .sidebar a {
@@ -46,12 +49,14 @@ html {
 }
 
 .profile-text {
+  font-size: 1vw;
+  letter-spacing: 1.5px;
   padding-left: 1rem;
 }
 
 .navbar {
-  height: 4rem;
-  background-color: #d0bdf4;
+  height: 4vw;
+  background-color: white;
   width: auto;
   margin-left: 20%;
   display: flex;
@@ -59,9 +64,9 @@ html {
 }
 
 .nav-search {
-  height: 2.5rem;
+  height: 2.5vw;
   width: 30vw;
-  border: 2px solid red;
+  border: 2px solid rgba(49, 49, 206, 0.808);
   margin-left: 5%;
   display: flex;
   align-items: center;
@@ -75,25 +80,31 @@ html {
 }
 
 .search-bar > input {
-  height: 2rem;
+  height: 2vw;
   margin-left: 1rem;
   width: 89%;
   border: none;
   outline: none;
-  background-color: #d0bdf4;
 }
 
-::placeholder {
+.search-bar::placeholder {
+  font-size: 1vw;
   color: black;
 }
 
 .search-icon {
-  font-size: 1.6rem;
+  font-size: 1.6vw;
   cursor: pointer;
 }
 
 .other-icons {
-  height: 2.5rem;
+  position: absolute;
+  right: 2vw;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 2.5vw;
   width: 15vw;
   margin-left: 10%;
 }
@@ -104,38 +115,43 @@ html {
 }
 
 .contanier-wrapper {
+  border: 2px slid black;
   display: flex;
   margin-left: 20%;
-  margin-bottom: 5%;
 }
 
-h2,h3{
+h2,
+h3 {
   font-size: 1.3vw;
 }
 p {
   line-height: 1vw;
-  font-size: .8vw;
+  font-size: 0.8vw;
 }
 
 .account-toggle {
   width: 25%;
-  height: 50rem;
+  height: auto;
 }
 
+/* .box1 {
+  background-color: white;
+} */
+
 .accountSettingBox {
+  border: none;
   height: auto;
-  width: 80%;
+  width: 93%;
   padding: 4%;
   margin: 10% 10% 0 10%;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 10px; 
-  background-color: transparent;
+  border-radius: 10px;
+  background-color: white;
   transition: background-color 0.3s;
-  box-shadow: .3rem .8rem 1.2rem rgba(0,0,0,0.35);
+  box-shadow: 0.3rem 0.8rem 1.2rem rgba(0, 0, 0, 0.35);
   transform: scale(0.9);
 }
-
 
 button:hover {
   outline: 2px solid rgb(108, 108, 231);
@@ -146,23 +162,24 @@ button:active {
 }
 
 .container {
+  background-color: white;
   max-height: 10vw;
   margin-top: 2.4%;
   margin-right: 2vw;
   width: 57vw;
-  border: 1px solid black;
+  border: none;
   border-radius: 1rem;
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
-  box-shadow: .2rem .5rem 1rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
   transform: scale(0.9);
 }
 
 .photo-section {
   height: auto;
   width: auto;
-  margin: 4% 0 0 7%;
+  margin:4% 0 0 7%;
 }
 
 .photo-section img {
@@ -188,22 +205,25 @@ button:active {
   margin: 3vw 2vw 2vw 4vw;
 }
 
-.upload-section input[type='file'] {
-  
+.upload-section input[type="file"] {
   display: none;
 }
 
 .upload-section label {
   display: inline-block;
-  border: 2px solid black;
-  border-radius: .2rem;
+  border: 2px solid rgba(49, 49, 206, 0.808);
+  border-radius: 0.5rem;
   text-align: center;
-  padding: .4rem 1rem;
+  padding: 0.4rem 1rem;
   font-size: 1vw;
   letter-spacing: 1.5px;
   user-select: none;
   cursor: pointer;
-  box-shadow: .3rem .8rem 1.2rem rgba(0,0,0,0.35);
+  box-shadow: 0.3rem 0.8rem 1.2rem rgba(0, 0, 0, 0.35);
+}
+
+.upload-section:hover {
+  scale: 0.97;
 }
 
 label:active {
@@ -211,17 +231,18 @@ label:active {
 }
 
 .form-container {
+  background-color: white;
   height: auto;
-  margin-top: 2.4%;
+  padding-bottom: 2vw;
   margin-right: 2vw;
   width: 57vw;
-  border: 1px solid black;
+  border: none;
   border-radius: 1rem;
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
   font-size: 1vw;
-  box-shadow: .2rem .5rem 1rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
   transform: scale(0.9);
 }
 
@@ -230,16 +251,17 @@ label:active {
 }
 
 .inner-form-container h1 {
-  padding: 2vw 0 0 3vw;
+  padding: 2vw 0 0 5vw;
   font-size: 1.9vw;
   margin-bottom: 5%;
 }
 
 .form-section {
+  letter-spacing: 1.5px;
   height: auto;
-  flex-grow: 1; 
-  margin: 0 auto 0 auto; 
-  padding: 1vw; 
+  flex-grow: 1;
+  margin: 0 auto 0 auto;
+  padding: 0.1vw;
   display: flex;
   justify-content: space-evenly;
 }
@@ -249,7 +271,7 @@ label:active {
   padding: 0.5vw;
   margin-bottom: 1vw;
   border: 1px solid black;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 .form-container label {
@@ -257,16 +279,27 @@ label:active {
 }
 
 .address-form {
+  letter-spacing: 1.5px;
   display: flex;
   justify-content: space-around;
-  margin: 0 auto 0 auto; 
-  padding: 1vw; 
+  margin: 0 auto 0 auto;
 }
 
 .address input {
-  width: 45.4vw;
+  width: 46vw;
+  font-weight: bold;
 }
 
-.submit {
+.update-button {
+  font-size: 1vw;
+  letter-spacing: 1.5px;
+  color: white;
+  background-color: rgba(49, 49, 206, 0.808);
+  height: 2.5vw;
+  width: 52.5vw;
+  margin-top: 1vw;
   cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  transform: scale(0.9);
 }
